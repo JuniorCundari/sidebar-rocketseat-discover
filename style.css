@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+}
+
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+  --light-grey: #dce4e3;
+  --text-color: #084236;
+}
+
+body {
+  display: flex;
+
+  background: var(--body-bg-color);
+}
+
+main {
+  height: 100vh;
+  width: 100vh;
+  padding: 20px 0 0 20px;
+}
+
+/* ========== Sidebar ========== */
+
+div#sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
+  width: 250px;
+
+  background: var(--green);
+  transition: all 0.5s ease-in-out;
+
+  position: relative;
+}
+
+div#sidebar.close {
+  width: 80px;
+}
+
+/* ========== Header Sidebar ========== */
+
+div div#header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px 14px 0 15px;
+  height: 60px;
+}
+
+div.close div#header {
+  display: flex;
+  justify-content: center;
+}
+
+div div#header a {
+  text-decoration: none;
+}
+
+div div#header a:first-child img {
+  padding-left: 15px;
+}
+
+div.close div#header a:first-child img {
+  display: none;
+}
+
+/* ========== Navbar Sidebar ========== */
+
+div div#navbar ul li.search {
+  background: var(--light-green);
+
+  border-radius: 12px;
+
+  height: 50px;
+  max-width: 95%;
+}
+
+div div#navbar ul li.search input {
+  padding-left: 38px;
+  font-size: 16px;
+
+  background: url(./assets/search.svg) no-repeat transparent;
+  width: 100%;
+}
+div div#navbar ul li.search input:focus {
+  outline: none;
+}
+
+div.close div#navbar ul li.search input:focus {
+  background-image: none;
+
+  padding-left: 0;
+}
+
+div div#navbar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  padding-left: 15px;
+}
+
+div div#navbar ul {
+  list-style: none;
+}
+
+div div#navbar ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-top: 30px;
+  padding-left: 13px;
+
+  height: 50px;
+  width: 95%;
+}
+
+div.close div#navbar ul li {
+  width: 80%;
+}
+
+div div#navbar ul li:hover {
+  background: var(--light-grey);
+  border-radius: 12px;
+}
+
+div div#navbar ul li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  line-height: 0;
+
+  text-decoration: none;
+}
+
+div div#navbar ul li a span {
+  padding-left: 14px;
+  transition: all 0.9s ease-in-out;
+}
+
+div.close div#navbar ul li a span {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ========== Footer Sidebar ========== */
+
+div div#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--light-green);
+  height: 60px;
+  width: 100%;
+
+  padding: 0.5rem;
+
+  position: relative;
+}
+
+div.close div#footer {
+  display: flex;
+}
+
+div div#footer div.login {
+  display: flex;
+  align-items: center;
+  transition: all 0.9s ease-in-out;
+}
+
+div.close div#footer div.login {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+div div#footer a:first-child img {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+}
+
+div div#footer a:last-child img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.close div#footer a:last-child img {
+  position: absolute;
+  bottom: 30%;
+  right: 40%;
+}
+
+div div#footer div.userName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-left: 0.3rem;
+
+  position: fixed;
+  left: 51px;
+}
+
+div div#footer div.userName span:first-child {
+  font-size: 0.8rem;
+}
+
+div div#footer div.userName span:last-child {
+  font-size: 0.7rem;
+}
