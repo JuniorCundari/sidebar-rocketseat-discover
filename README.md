@@ -1,6 +1,6 @@
 # Desafio Sidebar
 
-## [Click aqui para visitar a página do projeto!]()
+## [Click aqui para visitar a página do projeto!](https://juniorcundari.github.io/sidebar-rocketseat-discover/)
 
 <p align="center">
   <img alt="Desktop" src="./assets/sidebar.jpg" width="80%">
